@@ -71,6 +71,15 @@ ul li{
     font-size: 17px;
     cursor: pointer;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: white;
+    outline: none;
+    border: none;
+    border-radius: 24px;
+    height: 5vh;
+    margin:10px;
+    
+    /* padding-left: 10px; */
+
     user-select: none;
     position: relative;
     padding-left:35px;
@@ -80,7 +89,7 @@ ul li{
 
 ul li::before{
     content: '';
-    background-image: url("images/unchecked.png");
+    background-image: url("unchecked.png");
     position:absolute;
     height:18px;
     min-width: 18px;
@@ -101,7 +110,7 @@ ul li.checked{
 }
 ul li.checked::before{
     content: '';
-    background-image: url("images/checked.png");
+    background-image: url("checked.png");
     position:absolute;
     height:18px;
     min-width: 18px;
@@ -120,6 +129,9 @@ ul li span{
 }
 
 ul li span:hover{
-    background-color: rgb(198, 196, 196);
+    background-color: red;
     padding:1px;
+    /* width:3vw; */
+    /* align-items: center; */
+    border-radius: 24px;
 }
